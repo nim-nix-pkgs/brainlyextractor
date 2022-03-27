@@ -11,6 +11,7 @@
   inputs.src-brainlyextractor-master.ref   = "refs/heads/master";
   inputs.src-brainlyextractor-master.owner = "lurlo";
   inputs.src-brainlyextractor-master.repo  = "brainlyextractor";
+  inputs.src-brainlyextractor-master.dir   = "";
   inputs.src-brainlyextractor-master.type  = "gitlab";
   
   inputs."scraper".owner = "nim-nix-pkgs";
