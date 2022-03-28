@@ -11,7 +11,6 @@
   inputs.src-brainlyextractor-master.ref   = "refs/heads/master";
   inputs.src-brainlyextractor-master.owner = "lurlo";
   inputs.src-brainlyextractor-master.repo  = "brainlyextractor";
-  inputs.src-brainlyextractor-master.dir   = "";
   inputs.src-brainlyextractor-master.type  = "gitlab";
   
   inputs."scraper".owner = "nim-nix-pkgs";
@@ -21,6 +20,14 @@
   inputs."scraper".type  = "github";
   inputs."scraper".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scraper".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."gitlab.com/lurlo/useragent".owner = "nim-nix-pkgs";
+  inputs."gitlab.com/lurlo/useragent".ref   = "master";
+  inputs."gitlab.com/lurlo/useragent".repo  = "gitlab.com/lurlo/useragent";
+  inputs."gitlab.com/lurlo/useragent".dir   = "";
+  inputs."gitlab.com/lurlo/useragent".type  = "github";
+  inputs."gitlab.com/lurlo/useragent".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."gitlab.com/lurlo/useragent".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
